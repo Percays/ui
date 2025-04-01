@@ -1606,6 +1606,11 @@ end
                 __holder.Visible = bool
             end   
 
+            function cfg.set_menu_visibility(bool, pl)
+                WINDOW_PATH.Visible = bool
+
+                playerlist.Visible = flags["player_list"] and bool or false 
+            end 
 
             return setmetatable(cfg, library)
         end 
