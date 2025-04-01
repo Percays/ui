@@ -1601,6 +1601,9 @@ end
                 old_kblist.Visible = bool 
             end
 
+            function cfg.toggle_playerlist(bool) 
+                playerlist.Visible = bool 
+            end   
             
             function cfg.toggle_watermark(bool) 
                 __holder.Visible = bool
